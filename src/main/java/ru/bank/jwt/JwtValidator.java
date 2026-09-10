@@ -20,7 +20,6 @@ public class JwtValidator {
     public JwtValidator(PublicKey publicKey) {
         this.publicKey = publicKey;
     }
-
     public Claims validateToken(String token) {
         try {
             return Jwts.parser()
